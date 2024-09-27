@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+    font-size: 21px;
+}
+
+.hero{
+    background-color: #23424A;
+    padding: 5em 0;
+}
+
+.container{
+    color: white;
+    max-width: 760px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container h1{
+    font-size: 3rem;
+}
+
+.container p{
+    padding: 1em 0;
+}
+
+p{
+    font-weight: 400;
+}
+
+button{
+    border: none;
+    font-size: 21px;
+    border-radius: 2em;
+    background-color: #38CFD9;
+    color: #3A3A3A;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 750;
+    padding: 0.75em 2em;
+}
+
+button:hover, button:focus{
+    opacity: 0.75;
+}
+
+.container-2{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 2em;
+    padding: 5em;
+}
+
+.container-2 h1{
+    font-size: 2.1rem;
+    color: #87629A;
+}
+
+.container-3{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #136C72;
+    color: white;
+    gap: 5em;
+    padding: 5em;
+}
+
+.container-3 h1{
+    font-size: 2.1rem;
+}
