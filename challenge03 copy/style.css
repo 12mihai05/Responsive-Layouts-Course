@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+.intro{
+    background-color: #23424A;
+    padding: 5em 0;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3em;
+}
+
+img{
+    width: 100%;
+}
+
+.image{
+    width: 32%;
+    align-self: flex-start;
+    background-color: red;
+    
+}
+
+.container{
+    color: white;
+    width: 62%;
+    max-width: 730px;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 56px;
+    margin: 0;
+}
+
+.content{
+    font-weight: 400;
+    line-height: 31.5px;
+    padding: 1rem 0;
+}
+
+button{
+    border: none;
+    background-color: #38CFD9;
+    color: #23424A;
+    font-weight: 700;
+    letter-spacing: 5%;
+    padding: 0.75em 2.25em;
+    border-radius: 3em;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+
+/*Flexbox*/
+
+
+.container-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+}
+
+h2{
+    font-size: 36px;
+}
+
+p{
+    font-size: 21px;
+}
+
+.paragraph{
+    width: 62%;
+}
+
+.paragraph h2{
+    color: #136C72;
+}
+
+.column{
+    text-align: center;
+    background-color: #136C72;
+    color: white;
+    padding: 1em;
+    max-width: 400px;
+    width: 32%;
+}
+
+.column p+h2{
+    margin-top: 2em;
+}
