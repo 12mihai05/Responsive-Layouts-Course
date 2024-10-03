@@ -9,6 +9,11 @@ body{
 
 p{
     font-size: 21px;
+    font-size: medium;
+}
+
+h2{
+    margin: 0;
 }
 
 .hero{
@@ -50,7 +55,13 @@ p{
 
 .section-1{
     text-align: center;
-    padding: 2em 0;
+    padding: 4em 0;
+}
+
+.section-1-content{
+    display: flex;
+    gap: 2em 0;
+    flex-direction: column;
 }
 
 .section-1-title{
@@ -61,7 +72,67 @@ p{
 
 .section-1-paragraphs{
     display: flex;
-    gap: 3em;
-    flex-direction: row;
+    justify-content: space-around;
     text-align: start;
+}
+
+.section-1-paragraphs p{
+    width: 40%;
+}
+
+.section-2{
+    background-color: #222C2A;
+    color: white;
+    padding: 4em 0;
+}
+
+.section-2-content{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.section-2-left{
+    width: 40%;
+}
+
+.section-2-right{
+    align-self: flex-start;
+    width: 40%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.section-2-title{
+    font-family: "Playfair Display", sans-serif;
+    font-size: 36px;
+    color: #F3EED9;
+}
+
+.section-3{
+    background-color: #824936;
+    color: white;
+    padding: 4em 0;
+}
+
+.section-3-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-3-left{
+    align-self: flex-start;
+    width: 40%;
+}
+
+.section-3-right{
+    width: 40%;
+}
+
+.section-3-title{
+    font-family: "Playfair Display", sans-serif;
+    font-size: 36px;
+    color: #F3EED9;
 }

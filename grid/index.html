@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      font-size: 16px; /* Base font size */
+    }
+
+    /* Default layout for screens larger than 600px */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 20rem 10rem; /* First column 20rem, second column 10rem */
+      grid-template-rows: 10rem 10rem;    /* Two rows of equal height */
+      gap: 1rem; /* Space between items */
+      width: calc(20rem + 10rem + 1rem); /* Total width */
+      height: calc(10rem + 10rem + 1rem); /* Total height */
+      margin: auto;
+      border: 2px solid #000; /* Optional: border to visualize the container */
+    }
+
+    .grid-item {
+      background-color: lightgray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .item1 {
+      background-color: lightcoral;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    .item2 {
+      background-color: lightblue;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      width: 100%;
+      height: 100%;
+    }
+
+    .item3 {
+      background-color: lightgreen;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      width: 100%;
+      height: 100%;
+    }
+
+    .item4 {
+      background-color: lightgoldenrodyellow;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    /* Maintain squares using aspect ratio */
+    .item2, .item3 {
+      aspect-ratio: 1 / 1;
+    }
+
+    /* Media query for screens smaller than 600px */
+    @media (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        grid-template-rows: auto auto auto; /* Three rows */
+        gap: 1rem;
+        width: auto; /* No fixed width */
+        height: auto; /* No fixed height */
+      }
+
+      /* First row: Rectangle spanning across both columns */
+      .item1 {
+        grid-column: 1 / span 2; /* Span across both columns */
+        grid-row: 1 / 2;
+        height: 10rem; /* Adjust height to make it a rectangle */
+      }
+
+      /* Second row: Two squares */
+      .item2 {
+        grid-column: 1 / 2; /* First square in the first column */
+        grid-row: 2 / 3;
+        height: auto; /* Reset height for square */
+      }
+
+      .item3 {
+        grid-column: 2 / 3; /* Second square in the second column */
+        grid-row: 2 / 3;
+        height: auto; /* Reset height for square */
+      }
+
+      /* Third row: Rectangle spanning across both columns */
+      .item4 {
+        grid-column: 1 / span 2; /* Span across both columns */
+        grid-row: 3 / 4;
+        height: 10rem; /* Adjust height to make it a rectangle */
+      }
+    }
+  </style>
+  <title>Responsive 3x2 Grid</title>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item item1">Rectangle 1</div>
+    <div class="grid-item item2">Square 2</div>
+    <div class="grid-item item3">Square 3</div>
+    <div class="grid-item item4">Rectangle 4</div>
+  </div>
+</body>
+</html>
